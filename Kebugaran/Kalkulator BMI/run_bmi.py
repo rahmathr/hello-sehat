@@ -10,7 +10,7 @@ from utils.calculators import (
     tampilkan_bmi_gemuk,
     tampilkan_bmi_obesitas,
 )
-from utils.calculators im   port hitung_bmi
+from utils.calculators import hitung_bmi
 
 from utils.user_inputs import (
     input_nama_lengkap,

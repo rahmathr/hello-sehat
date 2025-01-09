@@ -1,4 +1,4 @@
-Nama, Usia_Tahun, Gender, Tinggi_Badan_cm, Berat_Badan_kg, BMR_kalori, Total_Kalori
+Nama, Usia, Gender, Tinggi_cm, Berat_kg, BMR_kal, Kalori_Total
 Ahmad Maulana,25,L,170,70,1680,2100
 Siti Aisyah,30,P,160,55,1300,1650
 Budi Santoso,22,L,175,68,1750,2200
