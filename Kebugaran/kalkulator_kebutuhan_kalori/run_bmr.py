@@ -18,11 +18,12 @@ menghubungkan berbagai fungsi dan modul pendukung lainnya.
 import os
 from time import sleep
 
-from utils import display_headers, calculators
-from data import reader
+from utils.display_headers import tampilan_header_utama
+from utils.calculators import hitung_kebutuhan_kalori
+from data.reader import read_database
 
 
-def pilih_menu() -> str:
+def pilih_menu():
     """
     Menampilpkan menu utama program dan meminta input dari pengguna.
 
@@ -30,7 +31,7 @@ def pilih_menu() -> str:
         str: Pilihan menu yang dimasukkan oleh pengguna.
     """
     os.system("cls" if os.name == "nt" else "clear")  # Membersihkan terminal sesuai OS
-    display_headers.tampilan_header_utama()  # Menampilkan header utama
+    tampilan_header_utama()  # Menampilkan header utama
     print(f"| [1] Hitung BMR{5*"\t"}|")  # Opsi menu untuk menghitung BMR
     print(f"| [2] Lihat Database{5*"\t"}|")  # Opsi menu untuk melihat database
     print(f"| [3] Exit{6*"\t"}|")  # Opsi menu untuk keluar dari program
@@ -51,9 +52,9 @@ def main_bmr():
                 pilih_menu()
             )  # Memanggil fungsi pilih_menu untuk mendapatkan input pengguna
             if pilihan == 1:
-                calculators.hitung_kebutuhan_kalori()  # Memanggil fungsi untuk menghitung kalori
+                hitung_kebutuhan_kalori()  # Memanggil fungsi untuk menghitung kalori
             elif pilihan == 2:
-                reader.read_database()  # Memanggil fungsi untuk membaca database
+                read_database()  # Memanggil fungsi untuk membaca database
                 sleep(2)  # Menunggu 2 detik sebelum kembali ke menu utama
             elif pilihan == 3:
                 print("\nTerima kasih! Sampai jumpa.")  # Pesan saat keluar dari program
