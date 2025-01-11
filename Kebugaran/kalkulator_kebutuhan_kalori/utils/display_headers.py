@@ -58,7 +58,7 @@ def tampilan_header_aktivitas_fisik() -> str:
     judul_aktivitas_fisik: str = "TINGKAT AKTIVITAS FISIK".center(
         63
     )  # Mengatur judul aktivitas fisik di tengah
-    print(f"+{63*'='}+")  # Garis horizontal atas
+    print(f"\n+{63*'='}+")  # Garis horizontal atas
     print(f"|{judul_aktivitas_fisik}|")  # Baris judul aktivitas fisik
     print(f"+{63*'='}+")  # Garis horizontal bawah
 

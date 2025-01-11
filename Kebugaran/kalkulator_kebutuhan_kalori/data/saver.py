@@ -9,6 +9,7 @@ File yang digunakan untuk penyimpanan adalah 'dataframes.csv', yang berlokasi di
 'Kalkulator Kebutuhan Kalori/data/'. Jika file belum ada, file baru akan dibuat secara otomatis.
 """
 
+
 def simpan_proses_bmr(
     nama_lengkap: str,
     jenis_kelamin: str,

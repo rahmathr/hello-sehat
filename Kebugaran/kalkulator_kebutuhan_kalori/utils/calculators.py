@@ -1,5 +1,32 @@
+"""
+Modul untuk menghitung kebutuhan kalori berdasarkan tingkat aktivitas fisik.
+
+Fungsi utama dalam modul ini mencakup:
+- Menghitung BMR (Basal Metabolic Rate) untuk pria dan wanita.
+- Menghitung kebutuhan kalori harian berdasarkan faktor aktivitas fisik.
+- Menyimpan hasil perhitungan ke dalam database.
+
+Fungsi yang tersedia:
+- hitung_kebutuhan_kalori: Fungsi utama untuk menerima input pengguna 
+  dan menghitung kebutuhan kalori.
+- hitung_bmr_pria: Menghitung BMR untuk pria.
+- hitung_bmr_wanita: Menghitung BMR untuk wanita.
+- proses_kalori: Menghitung dan menampilkan kebutuhan kalori berdasarkan BMR dan aktivitas.
+- aktivitas_ringan_pria: Proses kalori pria dengan aktivitas ringan.
+- aktivitas_sedang_pria: Proses kalori pria dengan aktivitas sedang.
+- aktivitas_berat_pria: Proses kalori pria dengan aktivitas berat.
+- aktivitas_ringan_wanita: Proses kalori wanita dengan aktivitas ringan.
+- aktivitas_sedang_wanita: Proses kalori wanita dengan aktivitas sedang.
+- aktivitas_berat_wanita: Proses kalori wanita dengan aktivitas berat.
+
+Dependencies:
+- os: Untuk membersihkan layar terminal.
+- time: Untuk menambahkan jeda visual.
+- utils: Modul internal untuk input pengguna dan header tampilan.
+- data.saver: Untuk menyimpan hasil ke dalam database.
+"""
+
 import os
-from time import sleep
 
 from utils import user_inputs
 from utils.display_headers import tampilan_header_utama, tampilan_header_aktivitas_fisik
