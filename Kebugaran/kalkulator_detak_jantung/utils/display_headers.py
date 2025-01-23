@@ -18,9 +18,9 @@ def tampilan_header_utama() -> str:
     tentang fungsi kalkulator detak jantung istirahat (RHR).
     """
     judul_utama: str = "Kalkulator Detak Jantung (RHR)".center(88)
-    print(f"+{88*'='}+")
-    print(f"|{judul_utama}|")
-    print(f"+{88*'='}+")
+    print(f" {88*' '} ")
+    print(f" {judul_utama} ")
+    print(f" {88*' '} ")
 
     # Deskripsi singkat tentang aplikasi
     deskripsi_utama_satu: str = (
@@ -28,15 +28,15 @@ def tampilan_header_utama() -> str:
             88
         )
     )
-    print(f"|{deskripsi_utama_satu}|")
+    print(f" {deskripsi_utama_satu} ")
 
     deskripsi_utama_dua: str = (
         "dan bagaimana Zona intensitas olahraga dan faktor lain memengaruhi detak jantung".center(
             88
         )
     )
-    print(f"|{deskripsi_utama_dua}|")
-    print(f"+{88*'='}+")
+    print(f" {deskripsi_utama_dua} ")
+    print(f" {88*' '} ")
 
 
 def tampilan_header_database() -> str:
@@ -44,10 +44,10 @@ def tampilan_header_database() -> str:
     Menampilkan header untuk bagian database yang menyimpan
     riwayat perhitungan detak jantung.
     """
-    judul_database: str = "Kalkulator Detak Jantung (RHR) | Database".center(102)
-    print(f"+{102*'='}+")
-    print(f"|{judul_database}|")
-    print(f"+{102*'='}+")
+    judul_database: str = "Kalkulator Detak Jantung (RHR)   Database".center(102)
+    print(f" {102*' '} ")
+    print(f" {judul_database} ")
+    print(f" {102*' '} ")
 
 
 def tampilan_zona_latihan_detak_jantung() -> str:
@@ -56,16 +56,16 @@ def tampilan_zona_latihan_detak_jantung() -> str:
     berdasarkan intensitas rendah, sedang, atau tinggi.
     """
     judul_zona_latihan: str = "Zona Latihan Detak Jantung".center(31)
-    print(f"\n+{31*'='}+")
-    print(f"|{judul_zona_latihan}|")
-    print(f"+{31*'='}+")
+    print(f"\n {31*' '} ")
+    print(f" {judul_zona_latihan} ")
+    print(f" {31*' '} ")
 
     # Menu pilihan zona latihan
     zona_pilihan: list[str] = [
-        "| [1] Zona Intensitas Rendah\t|",
-        "| [2] Zona Intensitas Sedang\t|",
-        "| [3] Zona Intensitas Tinggi\t|",
+        "  [1] Zona Intensitas Rendah\t ",
+        "  [2] Zona Intensitas Sedang\t ",
+        "  [3] Zona Intensitas Tinggi\t ",
     ]
     for tampil in zona_pilihan:
         print(tampil)
-    print(f"+{31*'='}+")
+    print(f" {31*' '} ")

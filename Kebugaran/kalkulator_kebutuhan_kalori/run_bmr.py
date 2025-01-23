@@ -32,10 +32,10 @@ def pilih_menu():
     """
     os.system("cls" if os.name == "nt" else "clear")  # Membersihkan terminal sesuai OS
     tampilan_header_utama()  # Menampilkan header utama
-    print(f"| [1] Hitung BMR{5*"\t"}|")  # Opsi menu untuk menghitung BMR
-    print(f"| [2] Lihat Database{5*"\t"}|")  # Opsi menu untuk melihat database
-    print(f"| [3] Exit{6*"\t"}|")  # Opsi menu untuk keluar dari program
-    print(f"+{55*"="}+")
+    print(f"  [1] Hitung BMR{5*"\t"} ")  # Opsi menu untuk menghitung BMR
+    print(f"  [2] Lihat Database{5*"\t"} ")  # Opsi menu untuk melihat database
+    print(f"  [3] Exit{6*"\t"} ")  # Opsi menu untuk keluar dari program
+    print(f" {55*" "} ")
     return int(input("Silakan pilih menu (1/2/3): "))  # Mengembalikan pilihan pengguna
 
 
@@ -69,7 +69,7 @@ def main_bmr():
         except KeyboardInterrupt:
             print(
                 "\n\nProgram dihentikan oleh pengguna."
-            )  # Pesan jika program dihentikan dengan Ctrl+C
+            )  # Pesan jika program dihentikan dengan Ctrl C
             break  # Keluar dari loop utama
         except ValueError as ve:
             print(f"Terjadi kesalahan: {ve}")  # Menampilkan pesan jika ada error

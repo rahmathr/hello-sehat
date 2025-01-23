@@ -41,7 +41,7 @@ def read_database():
         content = pd.read_csv(file_path)
         # Menampilkan isi file ke konsol
         print(content)
-        print(f"+{102*'='}+")
+        print(f" {102*' '} ")
     except FileNotFoundError:
         # Menangani kesalahan jika file tidak ditemukan
         print(f"File tidak ditemukan: {file_path}")

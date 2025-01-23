@@ -42,7 +42,7 @@ def read_database():
         # Membaca isi file CSV menggunakan pandas dan menampilkannya
         content = pd.read_csv(file_path)
         print(content)
-        print(f"+{85*'='}+")
+        print(f" {85*' '} ")
     except FileNotFoundError:
         # Pesan jika file CSV tidak ditemukan
         print(f"File tidak ditemukan: {file_path}")
