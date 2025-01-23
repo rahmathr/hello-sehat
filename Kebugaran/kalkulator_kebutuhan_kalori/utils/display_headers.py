@@ -22,30 +22,30 @@ def tampilan_header_utama() -> str:
     judul_utama: str = "Kalkulator Kebutuhan Kalori".center(
         55
     )  # Mengatur judul utama di tengah dengan lebar 55 karakter
-    print(f"+{55*'='}+")  # Garis horizontal atas
-    print(f"|{judul_utama}|")  # Baris judul utama
-    print(f"+{55*'='}+")  # Garis horizontal bawah
+    print(f" {55*' '} ")  # Garis horizontal atas
+    print(f" {judul_utama} ")  # Baris judul utama
+    print(f" {55*' '} ")  # Garis horizontal bawah
 
     deskripsi_utama = "Berapa jumlah kalori yang Anda butuhkan setiap hari?".center(
         55
     )  # Mengatur deskripsi di tengah
-    print(f"|{deskripsi_utama}|")  # Baris deskripsi utama
-    print(f"+{55*'='}+")  # Garis horizontal bawah
+    print(f" {deskripsi_utama} ")  # Baris deskripsi utama
+    print(f" {55*' '} ")  # Garis horizontal bawah
 
 
 def tampilan_header_database() -> str:
     """
     Menampilkan header untuk bagian database.
 
-    Header ini mencakup judul "Kalkulator Kebutuhan Kalori | Database" yang diformat ke tengah
+    Header ini mencakup judul "Kalkulator Kebutuhan Kalori   Database" yang diformat ke tengah
     dengan lebar 84 karakter.
     """
-    judul_database: str = "Kalkulator Kebutuhan Kalori | Database".center(
+    judul_database: str = "Kalkulator Kebutuhan Kalori   Database".center(
         85
     )  # Mengatur judul database di tengah
-    print(f"+{85*'='}+")  # Garis horizontal atas
-    print(f"|{judul_database}|")  # Baris judul database
-    print(f"+{85*'='}+")  # Garis horizontal bawah
+    print(f" {85*' '} ")  # Garis horizontal atas
+    print(f" {judul_database} ")  # Baris judul database
+    print(f" {85*' '} ")  # Garis horizontal bawah
 
 
 def tampilan_header_aktivitas_fisik() -> str:
@@ -58,16 +58,16 @@ def tampilan_header_aktivitas_fisik() -> str:
     judul_aktivitas_fisik: str = "TINGKAT AKTIVITAS FISIK".center(
         63
     )  # Mengatur judul aktivitas fisik di tengah
-    print(f"\n+{63*'='}+")  # Garis horizontal atas
-    print(f"|{judul_aktivitas_fisik}|")  # Baris judul aktivitas fisik
-    print(f"+{63*'='}+")  # Garis horizontal bawah
+    print(f"\n {63*' '} ")  # Garis horizontal atas
+    print(f" {judul_aktivitas_fisik} ")  # Baris judul aktivitas fisik
+    print(f" {63*' '} ")  # Garis horizontal bawah
 
     aktivitas_pilihan: list = [
-        "| [1] Hampir tidak pernah berolahraga\t\t\t\t|",
-        "| [2] Jarang berolahraga\t\t\t\t\t|",
-        "| [3] Sering berolahraga atau beraktivitas fisik berat\t\t|",
+        "  [1] Hampir tidak pernah berolahraga\t\t\t\t ",
+        "  [2] Jarang berolahraga\t\t\t\t\t ",
+        "  [3] Sering berolahraga atau beraktivitas fisik berat\t\t ",
     ]
     for pilihan in aktivitas_pilihan:
         print(pilihan)  # Menampilkan setiap pilihan aktivitas fisik
 
-    print(f"+{63*'='}+")  # Garis horizontal bawah
+    print(f" {63*' '} ")  # Garis horizontal bawah

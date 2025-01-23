@@ -48,10 +48,10 @@ def pilih_menu():
     """
     os.system("cls" if os.name == "nt" else "clear")
     tampilan_header_utama()
-    print(f"| [1] Hitung Denyut Jantung Istirahat{7*'\t'} |")
-    print(f"| [2] Lihat Database{9*'\t'} |")
-    print(f"| [3] Exit{10*'\t'} |")
-    print(f"+{88*'='}+")
+    print(f"  [1] Hitung Denyut Jantung Istirahat{7*'\t'}  ")
+    print(f"  [2] Lihat Database{9*'\t'}  ")
+    print(f"  [3] Exit{10*'\t'}  ")
+    print(f" {88*' '} ")
     return int(input("Silahkan pilih menu (1/2/3): "))
 
 
@@ -82,7 +82,7 @@ def zona_denyut_jantung():
             rendah_bawah, rendah_atas = zona_intensitas_rendah(
                 denyut_jantung_maks=denyut_jantung_maks,
                 denyut_jantung_istirahat=denyut_jantung_istirahat,
-            )
+            )   
             print(
                 f"\nUntuk denyut_jantung_maks {denyut_jantung_maks} dan denyut_jantung_istirahat {denyut_jantung_istirahat}, intensitas rendah berada di antara {rendah_bawah} - {rendah_atas} bpm"
             )
